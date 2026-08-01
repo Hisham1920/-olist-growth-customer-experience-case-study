@@ -1,0 +1,238 @@
+{
+  "kpis": {
+    "orders_all_statuses": 99441,
+    "delivered_orders": 96470,
+    "delivered_items": 110189,
+    "merchandise_gmv_brl": 13220248.93,
+    "freight_value_brl": 2198145.8999999994,
+    "average_order_gmv_brl": 137.0400013475692,
+    "average_delivery_days": 12.558217098051976,
+    "late_delivery_rate": 0.06773090079817559,
+    "average_review_score": 4.155879529136751,
+    "low_review_rate": 0.12721053177153518,
+    "unique_customers": 93350,
+    "repeat_customers": 2801,
+    "repeat_customer_rate": 0.030005356186395285,
+    "orders_from_repeat_customers_rate": 0.061376593759718046,
+    "review_coverage": 0.993303617704986,
+    "purchase_date_min": "2016-09-15T12:16:38",
+    "purchase_date_max": "2018-08-29T15:00:37"
+  },
+  "findings": {
+    "late_delivery_review_gap": 2.5942335927811304,
+    "very_late_low_review_multiplier": 8.359309261118206,
+    "top_10_category_gmv_share": 0.6243044282828039,
+    "priority_categories": [
+      {
+        "category": "watches_gifts",
+        "orders": 5493,
+        "merchandise_gmv_brl": 1165898.98,
+        "average_review": 4.120873074101247,
+        "late_delivery_rate": 0.07391225195703623
+      },
+      {
+        "category": "bed_bath_table",
+        "orders": 9272,
+        "merchandise_gmv_brl": 1023434.76,
+        "average_review": 3.998910319276452,
+        "late_delivery_rate": 0.0743097497842968
+      },
+      {
+        "category": "computers_accessories",
+        "orders": 6529,
+        "merchandise_gmv_brl": 888613.62,
+        "average_review": 4.0815635580178515,
+        "late_delivery_rate": 0.06386889263286874
+      },
+      {
+        "category": "furniture_decor",
+        "orders": 6307,
+        "merchandise_gmv_brl": 711927.6900000001,
+        "average_review": 4.057507987220447,
+        "late_delivery_rate": 0.07119074044712224
+      },
+      {
+        "category": "auto",
+        "orders": 3809,
+        "merchandise_gmv_brl": 578849.35,
+        "average_review": 4.1450804537061465,
+        "late_delivery_rate": 0.07298503544237332
+      },
+      {
+        "category": "baby",
+        "orders": 2809,
+        "merchandise_gmv_brl": 400421.84,
+        "average_review": 4.103336921420882,
+        "late_delivery_rate": 0.08045567817728728
+      }
+    ],
+    "high_freight_states": [
+      {
+        "customer_state": "MA",
+        "orders": 717,
+        "freight_burden": 0.20834526640259995,
+        "late_delivery_rate": 0.17433751743375175,
+        "average_review": 3.832865168539326
+      },
+      {
+        "customer_state": "PE",
+        "orders": 1593,
+        "freight_burden": 0.1847499150813156,
+        "late_delivery_rate": 0.096045197740113,
+        "average_review": 4.082963901203294
+      },
+      {
+        "customer_state": "PB",
+        "orders": 517,
+        "freight_burden": 0.1831978789678214,
+        "late_delivery_rate": 0.10444874274661509,
+        "average_review": 4.076171875
+      },
+      {
+        "customer_state": "PA",
+        "orders": 946,
+        "freight_burden": 0.17711700637811165,
+        "late_delivery_rate": 0.11205073995771671,
+        "average_review": 3.9142550911039655
+      },
+      {
+        "customer_state": "CE",
+        "orders": 1279,
+        "freight_burden": 0.1751987535354073,
+        "late_delivery_rate": 0.1376075058639562,
+        "average_review": 3.9442262372348784
+      },
+      {
+        "customer_state": "BA",
+        "orders": 3256,
+        "freight_burden": 0.1650269503146821,
+        "late_delivery_rate": 0.12162162162162163,
+        "average_review": 3.930628677609167
+      },
+      {
+        "customer_state": "MT",
+        "orders": 886,
+        "freight_burden": 0.16020357521353912,
+        "late_delivery_rate": 0.05981941309255079,
+        "average_review": 4.145620022753128
+      },
+      {
+        "customer_state": "ES",
+        "orders": 1995,
+        "freight_burden": 0.15429956368474732,
+        "late_delivery_rate": 0.10726817042606517,
+        "average_review": 4.078720162519045
+      }
+    ],
+    "seller_risk": {
+      "minimum_orders": 100,
+      "scaled_sellers": 210,
+      "priority_sellers": 58,
+      "priority_seller_orders": 19855,
+      "priority_seller_low_review_orders": 3466,
+      "priority_seller_gmv_brl": 2253362.17
+    },
+    "priority_sellers": [
+      {
+        "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+        "seller_state": "SP",
+        "orders": 1772,
+        "merchandise_gmv_brl": 196882.12,
+        "average_review": 3.8533941814033086,
+        "late_delivery_rate": 0.09706546275395034,
+        "low_review_rate": 0.18284424379232506,
+        "low_review_orders": 324
+      },
+      {
+        "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
+        "seller_state": "SP",
+        "orders": 973,
+        "merchandise_gmv_brl": 186570.05,
+        "average_review": 3.4984488107549123,
+        "late_delivery_rate": 0.09146968139773895,
+        "low_review_rate": 0.2528263103802672,
+        "low_review_orders": 246
+      },
+      {
+        "seller_id": "1f50f920176fa81dab994f9023523100",
+        "seller_state": "SP",
+        "orders": 1399,
+        "merchandise_gmv_brl": 106655.70999999999,
+        "average_review": 4.140602582496413,
+        "late_delivery_rate": 0.08863473909935668,
+        "low_review_rate": 0.139385275196569,
+        "low_review_orders": 195
+      },
+      {
+        "seller_id": "ea8482cd71df3c1969d7b9473ff13abc",
+        "seller_state": "SP",
+        "orders": 1132,
+        "merchandise_gmv_brl": 36696.76,
+        "average_review": 4.0266429840142095,
+        "late_delivery_rate": 0.08480565371024736,
+        "low_review_rate": 0.14487632508833923,
+        "low_review_orders": 164
+      },
+      {
+        "seller_id": "1025f0e2d44d7041d6cf58b6550e0bfa",
+        "seller_state": "SP",
+        "orders": 910,
+        "merchandise_gmv_brl": 138208.56,
+        "average_review": 4.006651884700665,
+        "late_delivery_rate": 0.07912087912087912,
+        "low_review_rate": 0.16813186813186815,
+        "low_review_orders": 153
+      },
+      {
+        "seller_id": "4869f7a5dfa277a7dca6462dcf3b52b2",
+        "seller_state": "SP",
+        "orders": 1124,
+        "merchandise_gmv_brl": 226987.93,
+        "average_review": 4.150537634408602,
+        "late_delivery_rate": 0.10498220640569395,
+        "low_review_rate": 0.1298932384341637,
+        "low_review_orders": 146
+      },
+      {
+        "seller_id": "8b321bb669392f5163d04c59e235e066",
+        "seller_state": "SP",
+        "orders": 930,
+        "merchandise_gmv_brl": 17262.94,
+        "average_review": 4.10475161987041,
+        "late_delivery_rate": 0.08709677419354839,
+        "low_review_rate": 0.14086021505376345,
+        "low_review_orders": 131
+      },
+      {
+        "seller_id": "1835b56ce799e6a4dc4eddc053f04066",
+        "seller_state": "SP",
+        "orders": 417,
+        "merchandise_gmv_brl": 33005.32,
+        "average_review": 3.6666666666666665,
+        "late_delivery_rate": 0.10311750599520383,
+        "low_review_rate": 0.23741007194244604,
+        "low_review_orders": 99
+      },
+      {
+        "seller_id": "7d13fca15225358621be4086e1eb0964",
+        "seller_state": "SP",
+        "orders": 558,
+        "merchandise_gmv_brl": 112436.18000000001,
+        "average_review": 4.0414414414414415,
+        "late_delivery_rate": 0.11469534050179211,
+        "low_review_rate": 0.17025089605734767,
+        "low_review_orders": 95
+      },
+      {
+        "seller_id": "2eb70248d66e0e3ef83659f71b244378",
+        "seller_state": "SP",
+        "orders": 187,
+        "merchandise_gmv_brl": 38990.72,
+        "average_review": 2.7934782608695654,
+        "late_delivery_rate": 0.11229946524064172,
+        "low_review_rate": 0.46524064171123,
+        "low_review_orders": 87
+      }
+    ]
+  }
+}

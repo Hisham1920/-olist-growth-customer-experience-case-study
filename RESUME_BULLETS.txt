@@ -1,0 +1,4 @@
+Olist E-commerce Growth & Customer Experience Case Study | MySQL, SQL, Excel, Python
+
+• Built a MySQL analytical model across 9 relational tables and 96,470 delivered orders, testing 4 hypotheses spanning logistics, geography, category performance and customer retention.
+• Found average reviews fell from 4.29 on-time to 1.70 at 8+ days late; built a transparent risk screen flagging 58 scaled sellers above both delay and low-review benchmarks and translated findings into 3 recommendations.

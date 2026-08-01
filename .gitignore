@@ -1,0 +1,6 @@
+data/raw/
+data/processed/order_fact.csv
+__pycache__/
+*.pyc
+.DS_Store
+
