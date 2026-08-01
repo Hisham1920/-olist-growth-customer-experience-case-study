@@ -1,0 +1,79 @@
+name: Correct Olist case study upload
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  correct-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify attached project archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "6935042f542b9775a19c4eeda960b6e89e697f8a8b4cf3f3bf76d7f2545a7d63  .upload/Olist_Case_Study_Project.zip" | sha256sum -c -
+
+      - name: Replace mistaken dataset upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm olist_customers_dataset.csv
+          rm olist_geolocation_dataset.csv
+          rm olist_order_items_dataset.csv
+          rm olist_order_payments_dataset.csv
+          rm olist_order_reviews_dataset.csv
+          rm olist_orders_dataset.csv
+          rm olist_products_dataset.csv
+          rm olist_sellers_dataset.csv
+          rm product_category_name_translation.csv
+          unzip -q .upload/Olist_Case_Study_Project.zip -d .
+          rm .upload/Olist_Case_Study_Project.zip
+          rmdir .upload
+          rm .github/workflows/correct-olist-upload.yml
+
+      - name: Validate project deliverables
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f INTERVIEW_GUIDE.md
+          test -f RESUME_BULLETS.txt
+          test -f requirements.txt
+          test -f analysis/build_analysis.py
+          test -f analysis/audit_data.py
+          test -f sql/01_create_schema.sql
+          test -f sql/02_load_data_template.sql
+          test -f sql/03_quality_checks_and_views.sql
+          test -f sql/04_analysis_queries.sql
+          test -f output/Olist_Case_Study_Analysis.xlsx
+          test -f output/Olist_Growth_Customer_Experience_Case_Study.pptx
+          python -m py_compile analysis/build_analysis.py analysis/audit_data.py
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          expected = [
+              Path("output/Olist_Case_Study_Analysis.xlsx"),
+              Path("output/Olist_Growth_Customer_Experience_Case_Study.pptx"),
+          ]
+          for path in expected:
+              with ZipFile(path) as archive:
+                  assert archive.testzip() is None, f"Corrupt Office file: {path}"
+          PY
+
+      - name: Commit corrected project
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Correct Olist case study upload"
+          git push origin HEAD:main
